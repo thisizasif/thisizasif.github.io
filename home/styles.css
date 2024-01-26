@@ -1,75 +1,72 @@
-/* CSS styles */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
+/* CSS for navigation bar */
 .navbar {
-  background-color: #007bff;
-  /* Blue background color */
   overflow: hidden;
-  padding: 2px;
+  background-color: #2c3e50; /* Dark blue background */
   display: flex;
-  /* Use flexbox for layout */
   justify-content: space-between;
-  /* Space between logo and menu */
+  align-items: center;
 }
 
 .navbar-logo {
-  color: #fff;
-  /* White text color */
-  font-size: 20px;
-  padding: 4px;
+  color: #f1c40f; /* Yellow text color */
+  font-size: 24px;
+  margin-left: 20px;
+  font-family: 'Arial', sans-serif; /* Font style */
 }
 
-.navbar-menu {
-  display: none;
-  /* Hide menu by default */
-  flex-direction: column;
-  /* Arrange items vertically */
-  position: absolute;
-  /* Position menu absolute for dropdown effect */
-  top: 60px;
-  /* Adjust top position */
-  left: 0;
-  /* Align to the left */
-  width: 100%;
-  /* Full width */
-  background-color: #007bff;
-  /* Blue background color */
-  padding: 0px;
-  margin-top: -23px;
+.navbar-links {
+  display: flex;
+  align-items: center;
 }
 
-.navbar-menu a {
-  color: #fff;
-  /* White text color for menu items */
+.navbar a {
+  color: #ecf0f1; /* Light grey text color */
+  text-align: center;
+  padding: 14px 20px;
   text-decoration: none;
-  margin-top: 10px;
-  /* Add margin between menu items */
   display: block;
-  /* Display menu items as block elements */
+  font-family: 'Arial', sans-serif; /* Font style */
 }
 
-.navbar-menu a:hover {
-  text-decoration: underline;
-  /* Underline on hover */
+.navbar a:hover {
+  background-color: #34495e; /* Darker blue hover color */
+  color: #f1c40f; /* Yellow hover text color */
 }
 
-/* Hamburger Menu Icon */
-.hamburger-menu {
-  cursor: pointer;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c3e50; /* Dark blue background */
+  width: 100%;
 }
 
-.hamburger-menu-icon {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  /* White color for hamburger menu icon */
-  margin: 6px 0;
-}
-
-.show-menu {
+.dropdown-content a {
+  float: none;
+  color: #ecf0f1; /* Light grey text color */
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  /* Show menu */
+  text-align: left;
+  font-family: 'Arial', sans-serif; /* Font style */
 }
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar.responsive .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar.responsive .navbar-links a {
+    display: block;
+  }
+  .dropdown-content {
+    position: static;
+    display: none;
+  }
+}
+
+/* Additional content styling */
