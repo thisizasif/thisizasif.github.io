@@ -1,0 +1,75 @@
+/* CSS styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #007bff;
+  /* Blue background color */
+  overflow: hidden;
+  padding: 2px;
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Space between logo and menu */
+}
+
+.navbar-logo {
+  color: #fff;
+  /* White text color */
+  font-size: 20px;
+  padding: 4px;
+}
+
+.navbar-menu {
+  display: none;
+  /* Hide menu by default */
+  flex-direction: column;
+  /* Arrange items vertically */
+  position: absolute;
+  /* Position menu absolute for dropdown effect */
+  top: 60px;
+  /* Adjust top position */
+  left: 0;
+  /* Align to the left */
+  width: 100%;
+  /* Full width */
+  background-color: #007bff;
+  /* Blue background color */
+  padding: 0px;
+  margin-top: -23px;
+}
+
+.navbar-menu a {
+  color: #fff;
+  /* White text color for menu items */
+  text-decoration: none;
+  margin-top: 10px;
+  /* Add margin between menu items */
+  display: block;
+  /* Display menu items as block elements */
+}
+
+.navbar-menu a:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+/* Hamburger Menu Icon */
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.hamburger-menu-icon {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  /* White color for hamburger menu icon */
+  margin: 6px 0;
+}
+
+.show-menu {
+  display: block;
+  /* Show menu */
+}
