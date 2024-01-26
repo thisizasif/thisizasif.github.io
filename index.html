@@ -43,22 +43,22 @@ body {
 #buttonContainer.show {
   opacity: 1; /* Show button */
 }
-#redirectButton {
+#buttonContainer {
   background-color: #00ff00; /* Green background color */
   border: none; /* Remove border */
   color: #000; /* Black text color */
-  padding: 12px 24px; /* Increased padding for better visual */
-  font-size: 18px; /* Increased font size for emphasis */
+  padding: 10px 20px; /* Increased padding for better visual */
+  font-size: 15px; /* Increased font size for emphasis */
   font-weight: bold; /* Bold text for emphasis */
   text-transform: uppercase; /* Uppercase text for a tech feel */
-  letter-spacing: 1px; /* Adjust letter spacing for better readability */
+  letter-spacing: 2px; /* Adjust letter spacing for better readability */
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s; /* Animation for button color change */
   outline: none; /* Remove default focus outline */
-  border-radius: 25px; /* Rounded corners for a modern look */
+  border-radius: 30px; /* Rounded corners for a modern look */
 }
 
-#redirectButton:hover {
+#buttonContainer:hover {
   background-color: transparent; /* Transparent background on hover */
   color: #00ff00; /* Green text color on hover */
   border: 2px solid #00ff00; /* Add border on hover */
@@ -71,7 +71,7 @@ body {
 <div id="textContainer" class="typewriter"></div>
 
 <div id="buttonContainer">
-  <a id="buttonContainer" href="https://thisizasif.blogspot.com">Enter</a>
+  <a id="redirectbutton" href="https://thisizasif.blogspot.com">Enter</a>
 </div>
 
 <script>
@@ -90,12 +90,12 @@ function typeWriter() {
       textContainer.appendChild(document.createTextNode('\u00A0')); // Non-breaking space
     }
     wordIndex++;
-    setTimeout(typeWriter, 100); // Adjust typing speed here (milliseconds)
+    setTimeout(typeWriter, 10); // Adjust typing speed here (milliseconds)
   } else {
     // Show the button after a delay and add animation
     setTimeout(() => {
       buttonContainer.classList.add('show');
-    }, 1500); // Adjust delay in milliseconds
+    }, 10); // Adjust delay in milliseconds
 
   }
 }
