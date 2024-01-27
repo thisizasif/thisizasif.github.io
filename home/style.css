@@ -83,7 +83,7 @@ body{
     width: auto;
     padding: 50px;
     text-align: center;
-    background-image: url('assets/thisizasif-web-bgi.jpg');
+    background-image: url('/assets/thisizasif-web-bgi.jpg');
     background-size: cover; /* Fit the background image according to the screen size */
     background-position: center;
     background-repeat: no-repeat;
