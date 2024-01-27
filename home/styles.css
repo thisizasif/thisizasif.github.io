@@ -70,56 +70,49 @@ body {
 }
 
 /* This is a comment in  */
-
+/* Mobile Styles */
 .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 520px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(/assets/thisizasif-web-bgi.jpg);
+    height: auto;
+    width: auto;
+    padding: 50px;
+    text-align: center;
+    background-image: url('your-background-image.jpg');
+    background-color: yellow;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-
-.intro button {
-    background-color: #5edaf0;
-    color: #000;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
 }
 
 .intro h1 {
-    font-family: sans-serif;
-    font-size: 60px;
+    font-size: 28px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+    margin-top: 52px;
+    font-family: 'Anonymous Pro', monospace;
     color: aqua;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-.intro h1, .intro p {
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    text-align: center; /* Center the text horizontally */
-
 }
 
 .intro p {
-    font-size: 20px;
-    color: yellow;
-    text-transform: uppercase;
-    margin: 20px 0;
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
     font-family: 'Inconsolata', monospace;
+}
+
+.intro button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.intro button:hover {
+    background-color: #0056b3;
+}
+
+.intro a {
+    text-decoration: none;
+    color: inherit;
 }
