@@ -2,133 +2,155 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Future Hacker</title>
-  <style>
-    /* CSS styles */
-    body {
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #000;
-      color: #00ff00;
-      /* Green color */
-      text-align: center;
-      padding: 0;
-      margin: 0;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    #textContainer {
-      font-size: 12px;
-      /* Small font size */
-      margin: 0 20px;
-      /* Add margins from both sides */
-    }
-
-    .typewriter span {
-      display: inline-block;
-      overflow: hidden;
-      /* Ensures the content is not revealed until the animation */
-      white-space: nowrap;
-      /* Keeps the content on a single line */
-      margin: 0 auto;
-      /* Gives that scrolling effect as the typing happens */
-      animation: typing 5s steps(20, end);
-    }
-
-    #buttonContainer {
-      margin-top: 20px;
-      /* Add margin to separate from text */
-      opacity: 0;
-      /* Initially hidden */
-      transition: opacity 1s ease-in-out;
-      /* Animation for opacity change */
-    }
-
-    #buttonContainer.show {
-      opacity: 1;
-      /* Show button */
-    }
-
-    #buttonContainer {
-      background-color: #00ff00;
-      /* Green background color */
-      border: none;
-      /* Remove border */
-      color: #000;
-      /* Black text color */
-      padding: 10px 20px;
-      /* Increased padding for better visual */
-      font-size: 15px;
-      /* Increased font size for emphasis */
-      font-weight: bold;
-      /* Bold text for emphasis */
-      text-transform: uppercase;
-      /* Uppercase text for a tech feel */
-      letter-spacing: 2px;
-      /* Adjust letter spacing for better readability */
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-      /* Animation for button color change */
-      outline: none;
-      /* Remove default focus outline */
-      border-radius: 30px;
-      /* Rounded corners for a modern look */
-    }
-
-    #buttonContainer:hover {
-      background-color: transparent;
-      /* Transparent background on hover */
-      color: #00ff00;
-      /* Green text color on hover */
-      border: 2px solid #00ff00;
-      /* Add border on hover */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Home Page</title>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-container">
+                <h3 class="logo">thisiz<span>asif</span></h3>
+            </div>
 
-  <div id="textContainer" class="typewriter"></div>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Menu<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 1</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 2</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 1</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 2</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 3</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">More<i class="fas fa-caret-down"></i></a>
+                                                    <div class="dropdown second">
+                                                        <ul>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 1</a>
+                                                            </li>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 2</a>
+                                                            </li>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 3</a>
+                                                            </li>
+                                                            <div class="arrow"></div>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 4</a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Services<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 1</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 2</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 1</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 2</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 3</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">More<i class="fas fa-caret-down"></i></a>
+                                                    <div class="dropdown second">
+                                                        <ul>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 1</a>
+                                                            </li>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 2</a>
+                                                            </li>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 3</a>
+                                                            </li>
+                                                            <div class="arrow"></div>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 4</a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
 
-  <div id="buttonContainer">
-    <a id="redirectbutton" href="/home/index.html">Enter</a>
-  </div>
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="btn transparent">Log in</a>
+                    <a href="#" class="btn solid">Sign up</a>
+                </div>
+            </div>
 
-  <script>
-    // JavaScript
-    const textContainer = document.getElementById('textContainer');
-    const buttonContainer = document.getElementById('buttonContainer');
-    const text = "Hello, fellow hacker. Welcome to the world  of hacking."; // The text to display
-    let wordIndex = 0;
-
-    function typeWriter() {
-      if (wordIndex < text.length) {
-        const span = document.createElement('span');
-        span.textContent = text.charAt(wordIndex);
-        textContainer.appendChild(span);
-        if (text.charAt(wordIndex) === ' ') {
-          textContainer.appendChild(document.createTextNode('\u00A0')); // Non-breaking space
-        }
-        wordIndex++;
-        setTimeout(typeWriter, 100); // Adjust typing speed here (milliseconds)
-      } else {
-        // Show the button after a delay and add animation
-        setTimeout(() => {
-          buttonContainer.classList.add('show');
-        }, 1500); // Adjust delay in milliseconds
-
-      }
-    }
-
-    typeWriter(); // Start typing animation
-  </script>
-
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="overlay"></div>
+        </section>
+    </main>
 </body>
 
 </html>
