@@ -77,53 +77,43 @@ body{
 }
 
 /* intro css start */
-/* Mobile Styles */
-.intro {
-    height: 372px;
-    width: auto;
-    padding: 50px;
-    text-align: center;
-    background-image: url('thisizasif-web-bgi.jpg](https://github.com/thisizasif/thisizasif.github.io/assets/68771679/449ad817-1974-4e35-9422-b02a59b16a40');
-    background-size: cover; /* Fit the background image according to the screen size */
-    background-position: center;
-    background-repeat: no-repeat;
+
+.belownav {
+    position: relative;
+    width: calc(100% - 20px); /* Adjusted width to fill viewport width and leave space at bottom */
+    max-width: 800px;
+    margin: 0 auto; /* Center the div horizontally */
+    margin-bottom: 10px; /* Leave a 10px space from below */
+    background-color: #ffffff;
+    padding: 20px 10px; /* Adjusted padding to remove space from left and right sides */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.intro h1 {
-    font-size: 28px; /* Adjust the font size as needed */
-    margin-bottom: 20px;
-    margin-top: 52px;
-    font-family: 'Anonymous Pro', monospace;
-    color: aqua;
+.belownav img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.intro p {
-    font-size: 20px; /* Adjust the font size as needed */
-    margin-bottom: 20px;
-    font-family: 'Inconsolata', monospace;
-     color: antiquewhite;
+@media screen and (max-width: 768px) {
+    .belownav {
+        padding: 15px 5px; /* Adjusted padding for smaller screens */
+        border-radius: 8px;
+        margin-bottom: 10px; /* Adjusted margin to maintain consistency */
+    }
 }
 
-.intro button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
+@media screen and (max-width: 480px) {
+    .belownav {
+        padding: 10px 0; /* Adjusted padding for smaller screens */
+        border-radius: 6px;
+        margin-bottom: 10px; /* Adjusted margin to maintain consistency */
+    }
 }
 
-.intro button:hover {
-    background-color: #0056b3;
-}
 
-.intro a {
-    text-decoration: none;
-    color: inherit;
-}
 /* intro css end  */
 
 
