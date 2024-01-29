@@ -80,38 +80,39 @@ body{
 
 .belownav {
     position: relative;
-    width: calc(100% - 20px); /* Adjusted width to fill viewport width and leave space at bottom */
+    width: calc(100% - 20px);
     max-width: 800px;
-    margin: 0 auto; /* Center the div horizontally */
-    margin-bottom: 10px; /* Leave a 10px space from below */
-    background-color: #ffffff;
-    padding: 20px 10px; /* Adjusted padding to remove space from left and right sides */
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: transparent;
+    padding: 20px 10px;
+    border-radius: 0px;
+    box-shadow: none; /* Remove box shadow */
 }
 
 .belownav img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0px;
 }
 
 @media screen and (max-width: 768px) {
     .belownav {
-        padding: 15px 5px; /* Adjusted padding for smaller screens */
-        border-radius: 8px;
-        margin-bottom: 10px; /* Adjusted margin to maintain consistency */
+        padding: 15px 5px;
+        border-radius: 0px;
+        margin-bottom: 10px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .belownav {
-        padding: 10px 0; /* Adjusted padding for smaller screens */
-        border-radius: 6px;
-        margin-bottom: 10px; /* Adjusted margin to maintain consistency */
+        padding: 10px 0;
+        border-radius: 0px;
+        margin-bottom: 10px;
     }
 }
+
 
 
 /* intro css end  */
