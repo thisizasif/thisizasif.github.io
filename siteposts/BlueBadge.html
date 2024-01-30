@@ -6,647 +6,208 @@
     <meta name="thisizasif" content="BlueBadge Bruteforce pdf zip file">
     <meta name="keywords" content="BlueBadge, cybersecurity, password cracking, file decryption, digital forensics, ethical hacking, network security, data protection, penetration testing, security software, cyber defense, information security, encryption, cyber threats, cybersecurity tool, cybersecurity solutions, cybersecurity technology">
     <meta name="description" content="BlueBadge is a versatile decryption tool designed for cybersecurity professionals, digital forensics experts, and enthusiasts. It specializes in password cracking and file decryption tasks, offering a comprehensive set of features for unlocking encrypted files and recovering lost passwords. With BlueBadge, users can tackle complex decryption challenges with ease and confidence, making it an indispensable tool in the realm of cybersecurity and digital investigations.">
-
-    <link rel="stylesheet" href="/home/style.css" />
-    <title>BlueBadge</title>
+    <title>TestPost</title>
     <style>
-      .hero-section.inner-page {
-        height: 60vh;
-        min-height: 0;
-        margin-top: 316px;
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333; /* Text color */
+        background-color: #f0f0f0; /* Background color */
+        margin: 0;
+        padding: 0;
       }
 
-      .hero-section,
-      .hero-section > .container > .row {
-        height: 100vh;
-        min-height: 880px;
-      }
-      .hero-section {
-        background: linear-gradient(
-            to right,
-            rgba(39, 70, 133, 0.8) 0%,
-            rgba(61, 179, 197, 0.8) 100%
-          ),
-          url(https://ajcejournal.in/public/journals/7/homepageImage_en_US.jpg);
-        position: relative;
-      }
-      section {
-        overflow: hidden;
-      }
-      article,
-      aside,
-      footer,
-      header,
-      nav,
-      section {
-        display: block;
-      }
-      .hero-section .wave {
-        width: 100%;
-        overflow: hidden;
-        position: absolute;
-        z-index: 1;
-        bottom: -150px;
-      }
-      .hero-section .wave svg {
-        width: 100%;
-      }
-
-      svg:not(:root) {
-        overflow: hidden;
-      }
-      img,
-      svg {
-        vertical-align: middle;
-      }
-
-      .hero-section {
-        background: linear-gradient(
-            to right,
-            rgba(39, 70, 133, 0.8) 0%,
-            rgba(61, 179, 197, 0.8) 100%
-          ),
-          url("https://ajcejournal.in/public/journals/7/homepageImage_en_US.jpg");
-        position: relative;
-      }
-
-      .hero-section .wave {
-        width: 100%;
-        overflow: hidden;
-        position: absolute;
-        z-index: 1;
-        bottom: -150px;
-      }
-
-      @media screen and (max-width: 992px) {
-        .hero-section .wave {
-          bottom: -180px;
-        }
-      }
-
-      .hero-section .wave svg {
-        width: 100%;
-      }
-
-      .hero-section,
-      .hero-section > .container > .row {
-        height: 100vh;
-        min-height: 880px;
-      }
-
-      .hero-section.inner-page {
-        height: 60vh;
-        min-height: 0;
-      }
-
-      .hero-section.inner-page .hero-text {
-        transform: translateY(-150px);
-        margin-top: -120px;
-      }
-
-      @media screen and (max-width: 992px) {
-        .hero-section.inner-page .hero-text {
-          margin-top: -80px;
-        }
-      }
-
-      .hero-section h1 {
-        font-size: 3.5rem;
-        color: #fff;
-        font-weight: 700;
-        margin-bottom: 30px;
-        padding-top: 300px;
-      }
-
-      @media screen and (max-width: 1400px) {
-        .hero-section h1 {
-          font-size: 2.5rem;
-        }
-      }
-
-      @media screen and (max-width: 992px) {
-        .hero-section h1 {
-          font-size: 2.5rem;
-          text-align: center;
-          margin-top: 40px;
-        }
-      }
-
-      @media screen and (max-width: 992px) {
-        .hero-section .hero-text-image {
-          margin-top: 4rem;
-        }
-      }
-
-      .hero-section p {
-        font-size: 18px;
-        color: #fff;
-      }
-
-      .hero-section .iphone-wrap {
-        position: relative;
-      }
-
-      @media screen and (max-width: 992px) {
-        .hero-section .iphone-wrap {
-          text-align: center;
-        }
-      }
-
-      .hero-section .iphone-wrap .phone-2,
-      .hero-section .iphone-wrap .phone-1 {
-        position: absolute;
-        top: -50%;
-        overflow: hidden;
-        left: 0;
-        box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
-        border-radius: 30px;
-      }
-
-      @media screen and (max-width: 992px) {
-        .hero-section .iphone-wrap .phone-2,
-        .hero-section .iphone-wrap .phone-1 {
-          position: relative;
-          max-width: 100%;
-        }
-      }
-
-      .hero-section .iphone-wrap .phone-2,
-      .hero-section .iphone-wrap .phone-1 {
-        width: 250px;
-      }
-
-      @media screen and (max-width: 992px) {
-        .hero-section .iphone-wrap .phone-1 {
-          margin-left: -150px;
-        }
-      }
-
-      .hero-section .iphone-wrap .phone-2 {
-        margin-top: 100px;
-        margin-left: 100px;
-        width: 350px;
-      }
-
-      @media screen and (max-width: 1450px) {
-        .hero-section .iphone-wrap .phone-2 {
-          margin-top: 150px;
-          margin-left: 50px;
-          width: 300px;
-        }
-      }
-
-      @media screen and (max-width: 1400px) {
-        .hero-section .iphone-wrap .phone-2 {
-          margin-top: 110px;
-          margin-left: 50px;
-          width: 270px;
-        }
-      }
-
-      @media screen and (max-width: 992px) {
-        .hero-section .iphone-wrap .phone-2 {
-          width: 250px;
-          position: absolute;
-          margin-top: 0px;
-          margin-left: 100px;
-        }
-      }
-      /* location */
-
-.cmp_breadcrumbs {
-    display: inline-block;
-    margin-left: 10px;
+      /* css for top image */
+      .img-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.cmp_breadcrumbs ol {
-    margin-bottom: 2.143rem;
-    padding: .357rem 0;
-    line-height: 1.43rem;
-    font-size: .93rem
+.img-container img {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
-.cmp_breadcrumbs li {
-    display: inline-block
+.img-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw; /* Responsive font size */
+  color: white; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+  padding: 10px 20px; /* Padding for better readability */
+  /* background-color: rgba(0, 0, 0, 0.5); Background color with transparency */
+  border-radius: 5px; /* Rounded corners */
+  max-width: calc(100% - 40px); /* Limit max width to prevent overflow */
+  overflow-wrap: break-word; /* Wrap long words */
+  overflow: hidden; /* Hide overflowing text */
 }
 
-.cmp_breadcrumbs a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 15px
-}
-
-.cmp_breadcrumbs .separator {
-    color: rgba(0,0,0,0.54);
-    padding: 0 .5em
-}
-
-.cmp_breadcrumbs .current {
-    color: rgba(0,0,0,0.54);
-    font-size: 15px
-}
-
-.cmp_breadcrumbs .current h1 {
-    margin: 0;
-    font-family: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
-    font-size: 15px;
-    font-weight: 400
-}
-
-/* Responsive CSS */
+/* Responsive font size for smaller screens */
 @media screen and (max-width: 768px) {
-    .cmp_breadcrumbs a,
-    .cmp_breadcrumbs .current {
-        font-size: 13px; /* Adjust font size for smaller screens */
-    }
+  .img-container h1 {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+  }
 }
 
-@media screen and (max-width: 576px) {
-    .cmp_breadcrumbs a,
-    .cmp_breadcrumbs .current {
-        font-size: 11px; /* Further adjust font size for even smaller screens */
-    }
+@media screen and (max-width: 480px) {
+  .img-container h1 {
+    font-size: 8vw; /* Adjust font size for mobile devices */
+  }
 }
 
-
-      /* location */
-
-      /* title */
-      /* Styles for the section containing the title */
-.itemtitle {
-    margin-bottom: -560px; /* Add some bottom margin for spacing */
+/* Adjust max-width and font size for larger screens if needed */
+@media screen and (min-width: 1200px) {
+  .img-container h1 {
+    font-size: 3vw; /* Adjust font size for larger screens */
+    max-width: calc(100% - 80px); /* Adjust max width for larger screens */
+  }
 }
 
-/* Styles for the page title */
-.page_title {
-    font-weight: bold; /* Make the title bold */
-    color: #333; /* Set the text color */
-    margin-left: 10px; /* Remove any default margin */
-}
+      /* css for top image end */
+      
+      
+      /* css for title */
+      .itemtitle {
+        margin: 20px 0;
+        margin-left: 10px;
+      }
 
-/* Responsive font size for page title */
-@media screen and (max-width: 768px) {
-    .page_title {
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
-}
+      .page_title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+      }
 
-@media screen and (max-width: 576px) {
-    .page_title {
-        font-size: 18px; /* Further adjust font size for even smaller screens */
-    }
-}
-.scrollpage{
-  max-height: 1000px;
-  overflow-y: scroll;
-}
+      .itemtitle hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 10px 0;
+      }
 
-      /* title */
+      /* Responsive Styling */
+      @media screen and (max-width: 768px) {
+        .page_title {
+          font-size: 1.2rem;
+        }
+      }
 
-      /*                      content                   */
+      @media screen and (max-width: 480px) {
+        .page_title {
+          font-size: 1rem;
+        }
 
+        .itemtitle {
+          margin: 10px 0;
+          margin-left: 10px;
+        }
+      }
+      /* css for title end */
 
-/* Global styles */
-/* body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-/* Container styles */
-.content {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    max-width: calc(100% - 40px);
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-/* Heading styles */
-.content h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.content h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-/* Paragraph styles */
-.content p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-/* List styles */
-.content ul,
-.content ol {
-    margin-bottom: 15px;
-    padding-left: 20px;
-}
-
-.content li {
-    margin-bottom: 5px;
-}
-
-/* Code block styles */
-.content pre {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    padding: 10px;
-    overflow-x: auto;
-}
-
-.content code {
-    font-family: Consolas, monospace;
-    font-size: 14px;
-}
-
-/* Image styles */
-.content img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Responsive design */
-@media screen and (max-width: 768px) {
-    .content {
-        padding: 15px;
-    }
-    
-    .content h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    
-    .content h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .content p {
+      /* css for location */
+      /* Base styles */
+      .current-location {
+        font-family: Arial, sans-serif;
         font-size: 14px;
-        margin-bottom: 10px;
-    }
-    
-    .content pre {
-        font-size: 12px;
-    }
-    
-    .content img {
-        margin: 15px auto;
-    }
-}
+        margin-left: 10px;
+      }
 
-@media screen and (max-width: 576px) {
-    .content h1 {
-        font-size: 20px;
-        margin-bottom: 8px;
-    }
-    
-    .content h2 {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
-    
-    .content p {
-        font-size: 13px;
-        margin-bottom: 8px;
-    }
-    
-    .content pre {
-        font-size: 11px;
-    }
-}
+      .current-location ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
 
-      /* content                               css                        end */
+      .current-location ol li {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      .current-location ol li .separator {
+        margin: 0 5px;
+      }
+
+      .current-location ol li:last-child .separator {
+        display: none; /* Hide separator for the last item */
+      }
+
+      .current-location ol li a {
+        text-decoration: none;
+        color: #007bff; /* Link color */
+      }
+
+      .current-location ol li.current span {
+        color: #333; /* Current page color */
+        font-weight: bold;
+      }
+
+      /* Responsive Styling */
+      @media screen and (max-width: 768px) {
+        .current-location ol li {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 5px;
+          margin-left: 10px;
+        }
+
+        .current-location ol li .separator {
+          display: none; /* Hide separator on small screens */
+        }
+      }
+
+      /* css for location end */
     </style>
   </head>
   <body>
-    <div class="scrollpage">
-    <section class="hero-section inner-page">
-      <div class="wave" bis_skin_checked="1">
-        <svg
-          width="1920px"
-          height="265px"
-          viewBox="0 0 1920 265"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <g
-            id="Page-1"
-            stroke="none"
-            stroke-width="1"
-            fill="none"
-            fill-rule="evenodd"
-          >
-            <g
-              id="Apple-TV"
-              transform="translate(0.000000, -402.000000)"
-              fill="#FFFFFF"
-            >
-              <path
-                d="M0,439.134243 C175.04074,464.89273 327.944386,477.771974 458.710937,477.771974 C654.860765,477.771974 870.645295,442.632362 1205.9828,410.192501 C1429.54114,388.565926 1667.54687,411.092417 1920,477.771974 L1920,667 L1017.15166,667 L0,667 L0,439.134243 Z"
-                id="Path"
-              ></path>
-            </g>
-          </g>
-        </svg>
-      </div>
-
-      <div class="container" bis_skin_checked="1">
-        <div class="row align-items-center" bis_skin_checked="1">
-          <div class="col-12" bis_skin_checked="1">
-            <div class="row justify-content-center" bis_skin_checked="1">
-              <div class="col-md-10 text-center hero-text" bis_skin_checked="1">
-                <h1
-                  data-aos="fade-up"
-                  data-aos-delay=""
-                  class="aos-init aos-animate">
-                  Brute-Force Tool for PDF and ZIP Files: BlueBadge 
-                </h1>
-                <p
-                  class="mb-5 aos-init aos-animate"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                ></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  
-    </section>
-     <!-- location -->
-     <nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
-      <ol>
-          <li>
-              <a href="/home/index.html">
-                  Home
-              </a>
-              <span class="separator">/</span>
-          </li>
-          <li>
-              <a href="/posts.html">
-                  Posts
-              </a>
-              <span class="separator">/</span>
-          </li>
-                      <!-- <li>
-                  <a href="https://ajcejournal.in/nceca/issue/view/3">
-                      Vol. 2 No. 1 (2020): NCECA 2020
-                  </a>
-                  <span class="separator">/</span>
-              </li> -->
-                  <li class="current" aria-current="page">
-              <span aria-current="page">
-                                      BlueBadge
-                              </span>
-          </li>
-      </ol>
-  </nav>
-    <!-- location end -->
-
-    <!-- title -->
-    <section class="itemtitle">
-      <h3 class="page_title">
-        Brute-Force Tool for PDF and ZIP Files: BlueBadge 
-      </h3>
-<hr>
-            </section>
-    <!-- title -->
-
-    <!-- article -->
     <div class="content">
-      
- <h1>
-          BlueBadge: A Versatile Tool for Password Cracking and File Decryption
-        </h1>
+      <!-- top image -->
+      <div class="img-container">
+        <img
+          src="https://th.bing.com/th?id=OIP.pD1Du_ibAQdUzCiart7KzwHaEm&w=317&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2"
+          alt="Poster"
+        />
+        <h1>Brute-Force Tool for PDF Brute-Force Tool for PDF aBrute-Force Tool for PDF a and ZIP Files: BlueBadge</h1>
+      </div>
+      <!-- top image end -->
 
-        <h2 class="class2">Introduction:</h2>
-        <p class="class4">
-          In the world of cybersecurity and digital forensics, having the right
-          tools at your disposal can make all the difference. BlueBadge is one
-          such tool that stands out for its versatility and effectiveness in
-          password cracking and file decryption tasks. In this article, we'll
-          delve into the key features of BlueBadge, explore its installation
-          process, and provide a comprehensive guide on how to use it
-          effectively.
-        </p>
+      <!-- title  -->
+      <section class="itemtitle">
+        <h3 class="page_title">
+          Brute-Force Tool for PDF and ZIP Files: BlueBadge
+        </h3>
+        <hr />
+      </section>
+      <!-- title end -->
 
-        <h2 class="class2">Key Features:</h2>
-        <ul class="class5">
-          <li class="class4">Word List Generation:</li>
-          <p class="class4">
-            BlueBadge excels in generating permutations of input strings to
-            create comprehensive word lists. These word lists serve as
-            invaluable resources for password cracking attempts, allowing users
-            to systematically test different combinations and variations to
-            unlock encrypted files or accounts.
-          </p>
-          <li class="class4">PDF Decryption:</li>
-          <p class="class4">
-            Leveraging the powerful pikepdf library, BlueBadge enables users to
-            attempt the decryption of PDF files using passwords from the
-            generated word list. This feature is particularly useful in
-            scenarios where access to sensitive information is restricted by
-            password-protected PDF documents.
-          </p>
-          <li class="class4">Zip File Decryption:</li>
-          <p class="class4">
-            In addition to PDF decryption, BlueBadge extends its capabilities to
-            zip file decryption. Users can employ the tool to unlock zip files
-            by supplying passwords from the generated word list, thereby gaining
-            access to compressed archives containing potentially crucial data.
-          </p>
-        </ul>
+      <!-- location  -->
 
-        <h2 class="class2">Installation:</h2>
-        <p class="class4">
-          Ensuring a seamless setup process is essential for maximizing the
-          utility of BlueBadge. Follow these straightforward steps to install
-          the necessary dependencies and set up the tool in your environment:
-        </p>
-        <ol class="class5">
-          <li class="class4">
-            Update and upgrade your system's packages using the commands:
+      <nav
+        class="current-location"
+        role="navigation"
+        aria-label="You are here:"
+      >
+        <ol>
+          <li>
+            <a href="/home/index.html"> Home </a>
+            <span class="separator">/</span>
           </li>
-          <pre class="class7"><code class="class8">
-          apt update -y
-          apt upgrade -y
-        </code></pre>
-          <li class="class4">
-            Install essential packages such as git, python, and qpdf:
+          <li>
+            <a href="/posts.html"> Posts </a>
+            <span class="separator">/</span>
           </li>
-          <pre class="class7"><code class="class8">
-            pkg install qpdf
-          </code></pre>
-          <pre class="class4"><code class="class8">
-            pkg install git
-          </code></pre>
-          <pre class="class7"><code class="class8">
-            pkg install python
-          </code></pre>
-          <pre class="class4"><code class="class8">
-          </code></pre>
-          <!-- Add remaining installation steps here -->
+          <li class="current" aria-current="page">
+            <span aria-current="page"> BlueBadge </span>
+          </li>
         </ol>
-
-        <h2 class="class2">How To Use:</h2>
-        <p class="class4">
-          Now that you've installed BlueBadge, it's time to put it to work.
-          Follow these simple steps to leverage its powerful capabilities:
-        </p>
-        <ol class="class5">
-          <li class="class4">Clone the BlueBadge repository from GitHub:</li>
-          <pre class="class7"><code class="class8">
-    git clone https://github.com/thisizasif/BlueBadge.git
-  </code></pre>
-          <li class="class4">Navigate to the BlueBadge directory:</li>
-          <pre class="class7"><code class="class8">
-          cd BlueBadge
-        </code></pre>
-          <li class="class4">Run the tool using the main.py script:</li>
-          <pre class="class7"><code class="class8">
-          python3 main.py
-        </code></pre>
-          <li class="class4">
-            For optimal functionality of BlueBadge's unlockpdf.py script:
-          </li>
-          <ul class="class5">
-            <li class="class4">Rename your PDF/ZIP file to "bluebadge.pdf/bluebadge.zip".</li>
-            <li class="class4">
-              Move or copy the renamed "bluebadge.pdf/bluebadge.zip" file to the BlueBadge
-              directory.
-            </li>
-          </ul>
-        </ol>
-
-        <h2 class="class2">Support:</h2>
-        <p class="class4">
-          If you encounter any issues or have questions about BlueBadge, don't
-          hesitate to seek support. Reach out to the tool's developer or
-          community for assistance and guidance. <a href="https://t.me/thisizasif">Click Here</a>
-        </p>
-
-        <h2 class="class2">Disclaimer:</h2>
-        <p class="class4">BlueBadge is a tool designed for educational and ethical purposes only. It is intended to be used by cybersecurity professionals, digital forensics experts, and enthusiasts for legal and authorized testing of systems, applications, and networks. Any unauthorized or unlawful use of BlueBadge for malicious activities, including but not limited to unauthorized access, data breaches, or cybercrimes, is strictly prohibited. The developers and contributors of BlueBadge shall not be held responsible for any misuse or damage caused by the tool. By using BlueBadge, you agree to comply with all applicable laws and regulations governing cybersecurity and ethical hacking practices.
-        </p>
-    <!-- article -->
-    </div>
-
+      </nav>
+      <!-- location end -->
 
     </div>
   </body>
 </html>
+
+  
