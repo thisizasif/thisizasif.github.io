@@ -22,7 +22,7 @@ body {
 }
 
 #textContainer {
-  font-size: 20px; /* Small font size */
+  font-size: 15px; /* Small font size */
   margin: 0 20px; /* Add margins from both sides */
 }
 
@@ -51,6 +51,8 @@ body {
   font-size: 12px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s; /* Animation for button color change */
+  list-style: none;
+  text-decoration: none;
 }
 
 #redirectButton:hover {
@@ -64,14 +66,14 @@ body {
 <div id="textContainer" class="typewriter"></div>
 
 <div id="buttonContainer">
-  <a id="redirectButton" href="/home/index.html">Get in</a>
+  <a id="redirectButton" href="/home/index.html">Agree <span>&rarr;</span></a>
 </div>
 
 <script>
 // JavaScript
 const textContainer = document.getElementById('textContainer');
 const buttonContainer = document.getElementById('buttonContainer');
-const text = "Hello, fellow hacker. Welcome to the world  of hacking."; // The text to display
+const text = "Hacking without permission is illegal. This channel is strictly educational for learning about cybersecurity, focusing on ethical hacking and penetration testing. Our aim is to enhance our defenses against real-world cybersecurity threats."; // The text to display
 let wordIndex = 0;
 
 function typeWriter() {
@@ -83,7 +85,7 @@ function typeWriter() {
       textContainer.appendChild(document.createTextNode('\u00A0')); // Non-breaking space
     }
     wordIndex++;
-    setTimeout(typeWriter, 100); // Adjust typing speed here (milliseconds)
+    setTimeout(typeWriter, 60); // Adjust typing speed here (milliseconds)
   } else {
     // Show the button after a delay and add animation
     setTimeout(() => {
