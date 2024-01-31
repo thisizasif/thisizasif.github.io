@@ -3,232 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TestPost</title>
+    <title>BlueBadge-Unlock Any Pdf/Zip file</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        color: #333; /* Text color */
-        background-color: #f0f0f0; /* Background color */
-        margin: 0;
-        padding: 0;
+        font-family: Arial, sans-serif; /* Set default font family */
+        /* font-size: 16px; Set default font size */
+        /* line-height: 1.5; Set default line height */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        /* background-color: #ffffff; Set default background color */
+        /* color: #333333; Set default text color */
       }
 
-      /* css for top image */
-      .img-container {
-        position: relative;
-        text-align: center;
-        margin-bottom: 20px;
+      /* Base styles for the container */
+      .top-background {
+        background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+        height: 40vh; /* Set height to 20% of viewport height */
+        background-size: cover; /* Ensure background covers the entire container */
       }
 
-      .img-container img {
-        width: 100%;
-        height: 400px;
-        border-radius: 5px;
-        object-fit: cover;
+      /* No need for media queries to adjust height */
+
+      .top-title {
+        display: flex; /* Use flexbox */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        text-align: center; /* Center text within the container */
+        padding: 20px; /* Add padding for spacing */
       }
 
-      .img-container h1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5vw; /* Responsive font size */
-        color: white; /* Text color */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
-        padding: 10px 20px; /* Padding for better readability */
-        /* background-color: rgba(0, 0, 0, 0.5); Background color with transparency */
-        border-radius: 5px; /* Rounded corners */
-        max-width: calc(100% - 40px); /* Limit max width to prevent overflow */
-        overflow-wrap: break-word; /* Wrap long words */
-        overflow: hidden; /* Hide overflowing text */
+      .top-title h1 {
+        margin: 0; /* Remove default margin */
+        margin-top: -300px;
       }
 
-      /* Responsive font size for smaller screens */
       @media screen and (max-width: 768px) {
-        .img-container h1 {
-          font-size: 6vw; /* Adjust font size for smaller screens */
+        .top-title {
+          flex-direction: column; /* Stack items vertically on smaller screens */
         }
       }
 
-      @media screen and (max-width: 480px) {
-        .img-container h1 {
-          font-size: 8vw; /* Adjust font size for mobile devices */
-        }
-      }
+      /* location css */
 
-      /* Adjust max-width and font size for larger screens if needed */
-      @media screen and (min-width: 1200px) {
-        .img-container h1 {
-          font-size: 3vw; /* Adjust font size for larger screens */
-          max-width: calc(
-            100% - 80px
-          ); /* Adjust max width for larger screens */
-        }
-      }
-
-      /* css for top image end */
-
-      /* css for title */
-      .itemtitle {
-        margin: 20px 0;
-        margin-left: 10px;
-      }
-
-      .page_title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #333;
-      }
-
-      .itemtitle hr {
-        border: none;
-        border-top: 2px solid #ccc;
-        margin: 10px 0;
-      }
-
-      /* Responsive Styling */
-      @media screen and (max-width: 768px) {
-        .page_title {
-          font-size: 1.2rem;
-        }
-      }
-
-      @media screen and (max-width: 480px) {
-        .page_title {
-          font-size: 1rem;
-        }
-
-        .itemtitle {
-          margin: 10px 0;
-          margin-left: 10px;
-        }
-      }
-      /* css for title end */
-
-      /* css for location */
-      /* Base styles */
-      .current-location {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        margin-left: 10px;
-      }
-
-      .current-location ol {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .current-location ol li {
+      .cmp_breadcrumbs {
         display: inline-block;
-        margin-right: 5px;
+        margin-left: 10px;
+        margin-top: -22px;
       }
 
-      .current-location ol li .separator {
-        margin: 0 5px;
+      .cmp_breadcrumbs ol {
+        margin-bottom: 2.143rem;
+        padding: 0.357rem 0;
+        line-height: 1.43rem;
+        font-size: 0.93rem;
       }
 
-      .current-location ol li:last-child .separator {
-        display: none; /* Hide separator for the last item */
+      .cmp_breadcrumbs li {
+        display: inline-block;
       }
 
-      .current-location ol li a {
+      .cmp_breadcrumbs a {
+        display: inline-block;
         text-decoration: none;
-        color: #007bff; /* Link color */
+        font-size: 15px;
       }
 
-      .current-location ol li.current span {
-        color: #333; /* Current page color */
-        font-weight: bold;
+      .cmp_breadcrumbs .separator {
+        color: rgba(0, 0, 0, 0.54);
+        padding: 0 0.5em;
       }
 
-      /* Responsive Styling */
+      .cmp_breadcrumbs .current {
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 15px;
+      }
+
+      .cmp_breadcrumbs .current h1 {
+        margin: 0;
+        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue",
+          sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+      }
+
+      /* Responsive CSS */
       @media screen and (max-width: 768px) {
-        .current-location ol li {
-          display: block;
-          margin-right: 0;
-          margin-bottom: 5px;
-          margin-left: 10px;
-        }
-
-        .current-location ol li .separator {
-          display: none; /* Hide separator on small screens */
+        .cmp_breadcrumbs a,
+        .cmp_breadcrumbs .current {
+          font-size: 13px; /* Adjust font size for smaller screens */
         }
       }
 
-      /* main content */
-      .main-content {
-  margin-left: 10px;
-}
+      @media screen and (max-width: 576px) {
+        .cmp_breadcrumbs a,
+        .cmp_breadcrumbs .current {
+          font-size: 11px; /* Further adjust font size for even smaller screens */
+        }
+      }
+      /* location css end */
 
-/* Responsive styling */
-@media screen and (max-width: 768px) {
-  .main-content {
-    margin-left: 5px; /* Adjust margin for smaller screens */
-  }
-}
+      /* <!-- ----------------------------------------------------Page Title------------------------------------------------- --> */
+      .page-title {
+        text-align: left; /* Start the text from the left side */
+        margin-bottom: 20px; /* Add space below the title */
+      }
 
-@media screen and (max-width: 480px) {
-  .main-content {
-    margin-left: 0; /* Remove margin for mobile devices */
-  }
-}
+      .page-title .title {
+        font-size: 24px; /* Set the initial font size */
+        margin: 0; /* Remove default margin */
+        margin-left: 10px;
+      }
 
+      /* Media queries for responsiveness */
+      @media screen and (max-width: 768px) {
+        .page-title .title {
+          font-size: 20px; /* Decrease font size for smaller screens */
+        }
+      }
 
-      /* css for location end */
+      @media screen and (max-width: 576px) {
+        .page-title .title {
+          font-size: 18px; /* Further decrease font size for smaller screens */
+        }
+      }
+
+      /* <!-- ----------------------------------------------------Page Title--------------------------------------------------- --> */
     </style>
   </head>
   <body>
-    <div class="content">
-      <!-- top image -->
-      <div class="img-container">
-        <img
-          src="https://th.bing.com/th?id=OIP.pD1Du_ibAQdUzCiart7KzwHaEm&w=317&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2"
-          alt="Poster"
-        />
-        <h1>
-          Brute-Force Tool for PDF Brute-Force Tool for PDF aBrute-Force Tool
-          for PDF a and ZIP Files: BlueBadge
-        </h1>
-      </div>
-      <!-- top image end -->
+    <!-- top-----------------------------------------------------------------------------------------------------------img -->
+    <div class="top-background"></div>
+    <!-- top------------------------------------------------------end--------------------------------------------------end -->
 
-      <!-- title  -->
-      <section class="itemtitle">
-        <h3 class="page_title">
-          Brute-Force Tool for PDF and ZIP Files: BlueBadge
-        </h3>
-        <hr />
-      </section>
-      <!-- title end -->
-
-      <!-- location  -->
-
-      <nav
-        class="current-location"
-        role="navigation"
-        aria-label="You are here:"
-      >
-        <ol>
-          <li>
-            <a href="/home/index.html"> Home </a>
-            <span class="separator">/</span>
-          </li>
-          <li>
-            <a href="/posts.html"> Posts </a>
-            <span class="separator">/</span>
-          </li>
-          <li class="current" aria-current="page">
-            <span aria-current="page"> BlueBadge </span>
-          </li>
-        </ol>
-      </nav>
-      <!-- location end -->
-
-      <!-- main content -->
-    
-      <!-- main content end -->
+    <!-- top---------------------------------------------------------------------------------------------------------title -->
+    <div class="top-title">
+      <h1>How to unlock pdf and zip files with BlueBadge</h1>
     </div>
+    <!-- top---------------------------------------------------------------------------------------------------------title -->
+
+    <!-- ----------------------------------------------------location----------------------------------------------------- -->
+    <nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+      <ol>
+        <li>
+          <a href="/home/index.html"> Home </a>
+          <span class="separator">/</span>
+        </li>
+        <li>
+          <a href="/posts.html"> Posts </a>
+          <span class="separator">/</span>
+        </li>
+
+        <li class="current" aria-current="page">
+          <span aria-current="page"> BlueBadge </span>
+        </li>
+      </ol>
+    </nav>
+    <!-- ----------------------------------------------------location----------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------Page Title--------------------------------------------------- -->
+    <div class="page-title">
+      <h3 class="title">Brute-Force Tool for PDF and ZIP Files: BlueBadge</h3>
+      <hr />
+    </div>
+    <!-- ----------------------------------------------------Page Title--------------------------------------------------- -->
   </body>
 </html>
