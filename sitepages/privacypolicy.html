@@ -1,379 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="names" content="asif, asif nazir, asif nazir mantoo, asif mantoo, mantoo asif, thisizasif, thisixasif, ashu, ashu bhai, asif hacker, anm, ats, kashmir, shopian">
-    <meta name="description" content="BlueBadge is a versatile tool designed to automate password cracking and decryption tasks for PDF and ZIP files. With BlueBadge, you can efficiently crack passwords and decrypt password-protected documents and archives. Its features include custom wordlist generation, allowing you to tailor your password cracking approach, as well as PDF and ZIP decryption capabilities. Additionally, BlueBadge provides clear usage instructions to ensure seamless execution of the cracking and decryption processes. Make sure to follow the provided prerequisites to set up BlueBadge correctly and unlock any PDF or ZIP file with ease.">
-    <meta name="keywords" content="BlueBadge, password cracking, PDF decryption, ZIP decryption, custom wordlists, brute-force tool, how to use BlueBadge, prerequisites, automated password cracking, decryption tool, hacker, hacker from kashmir, hacker from shopian, asif hacker, first hacker of kashmir, more like this, similar tools, password recovery, cybersecurity, ethical hacking, penetration testing">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="names" content="asif, asif nazir, asif nazir mantoo, asif mantoo, mantoo asif, thisizasif, thisixasif, ashu, ashu bhai, asif hacker, anm, ats, kashmir, shopian">
+  <meta name="description" content="BlueBadge is a versatile tool designed to automate password cracking and decryption tasks for PDF and ZIP files. With BlueBadge, you can efficiently crack passwords and decrypt password-protected documents and archives. Its features include custom wordlist generation, allowing you to tailor your password cracking approach, as well as PDF and ZIP decryption capabilities. Additionally, BlueBadge provides clear usage instructions to ensure seamless execution of the cracking and decryption processes. Make sure to follow the provided prerequisites to set up BlueBadge correctly and unlock any PDF or ZIP file with ease.">
+  <meta name="keywords" content="BlueBadge, password cracking, PDF decryption, ZIP decryption, custom wordlists, brute-force tool, how to use BlueBadge, prerequisites, automated password cracking, decryption tool, hacker, hacker from kashmir, hacker from shopian, asif hacker, first hacker of kashmir, more like this, similar tools, password recovery, cybersecurity, ethical hacking, penetration testing">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
-    <title>BlueBadge-Unlock Any Pdf/Zip file</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
+  <title>BlueBadge-Unlock Any Pdf/Zip file</title>
 
-    <style>
-      body {
-        font-family: Arial, sans-serif; /* Set default font family */
-        /* font-size: 16px; Set default font size */
-        /* line-height: 1.5; Set default line height */
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-        /* background-color: #ffffff; Set default background color */
-        /* color: #333333; Set default text color */
-      }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      /* Set default font family */
+      /* font-size: 16px; Set default font size */
+      /* line-height: 1.5; Set default line height */
+      margin: 0;
+      /* Remove default margin */
+      padding: 0;
+      /* Remove default padding */
+      /* background-color: #ffffff; Set default background color */
+      /* color: #333333; Set default text color */
+    }
 
-      /* Base styles for the container */
-      .top-background {
-        background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-        height: 40vh; /* Set height to 20% of viewport height */
-        background-size: cover; /* Ensure background covers the entire container */
-      }
+    /* Base styles for the container */
+    .top-background {
+      background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      height: 40vh;
+      /* Set height to 20% of viewport height */
+      background-size: cover;
+      /* Ensure background covers the entire container */
+    }
 
-      /* No need for media queries to adjust height */
+    /* No need for media queries to adjust height */
+    .top-title {
+      display: flex;
+      /* Use flexbox */
+      align-items: center;
+      /* Center items vertically */
+      justify-content: center;
+      /* Center items horizontally */
+      text-align: center;
+      /* Center text within the container */
+      padding: 20px;
+      /* Add padding for spacing */
+    }
 
+    .top-title h1 {
+      margin: 0;
+      /* Remove default margin */
+      margin-top: -300px;
+    }
+
+    @media screen and (max-width: 768px) {
       .top-title {
-        display: flex; /* Use flexbox */
-        align-items: center; /* Center items vertically */
-        justify-content: center; /* Center items horizontally */
-        text-align: center; /* Center text within the container */
-        padding: 20px; /* Add padding for spacing */
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
       }
+    }
 
-      .top-title h1 {
-        margin: 0; /* Remove default margin */
-        margin-top: -300px;
-      }
+    /* location css */
+    .cmp_breadcrumbs {
+      display: inline-block;
+      margin-left: 10px;
+      margin-top: -22px;
+    }
 
-      @media screen and (max-width: 768px) {
-        .top-title {
-          flex-direction: column; /* Stack items vertically on smaller screens */
-        }
-      }
+    .cmp_breadcrumbs ol {
+      margin-bottom: 2.143rem;
+      padding: 0.357rem 0;
+      line-height: 1.43rem;
+      font-size: 0.93rem;
+    }
 
-      /* location css */
+    .cmp_breadcrumbs li {
+      display: inline-block;
+    }
 
-      .cmp_breadcrumbs {
-        display: inline-block;
-        margin-left: 10px;
-        margin-top: -22px;
-      }
+    .cmp_breadcrumbs a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 15px;
+    }
 
-      .cmp_breadcrumbs ol {
-        margin-bottom: 2.143rem;
-        padding: 0.357rem 0;
-        line-height: 1.43rem;
-        font-size: 0.93rem;
-      }
+    .cmp_breadcrumbs .separator {
+      color: rgba(0, 0, 0, 0.54);
+      padding: 0 0.5em;
+    }
 
-      .cmp_breadcrumbs li {
-        display: inline-block;
-      }
+    .cmp_breadcrumbs .current {
+      color: rgba(0, 0, 0, 0.54);
+      font-size: 15px;
+    }
 
-      .cmp_breadcrumbs a {
-        display: inline-block;
-        text-decoration: none;
-        font-size: 15px;
-      }
+    .cmp_breadcrumbs .current h1 {
+      margin: 0;
+      font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue",
+        sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+    }
 
-      .cmp_breadcrumbs .separator {
-        color: rgba(0, 0, 0, 0.54);
-        padding: 0 0.5em;
-      }
+    /* Responsive CSS */
+    @media screen and (max-width: 768px) {
 
+      .cmp_breadcrumbs a,
       .cmp_breadcrumbs .current {
-        color: rgba(0, 0, 0, 0.54);
-        font-size: 15px;
+        font-size: 13px;
+        /* Adjust font size for smaller screens */
       }
+    }
 
-      .cmp_breadcrumbs .current h1 {
-        margin: 0;
-        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-          "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue",
-          sans-serif;
-        font-size: 15px;
-        font-weight: 400;
+    @media screen and (max-width: 576px) {
+
+      .cmp_breadcrumbs a,
+      .cmp_breadcrumbs .current {
+        font-size: 11px;
+        /* Further adjust font size for even smaller screens */
       }
+    }
 
-      /* Responsive CSS */
-      @media screen and (max-width: 768px) {
-        .cmp_breadcrumbs a,
-        .cmp_breadcrumbs .current {
-          font-size: 13px; /* Adjust font size for smaller screens */
-        }
-      }
+    /* location css end */
+    /* <!-- ----------------------------------------------------Page Title------------------------------------------------- --> */
+    .page-title {
+      text-align: left;
+      /* Start the text from the left side */
+      margin-bottom: 20px;
+      /* Add space below the title */
+    }
 
-      @media screen and (max-width: 576px) {
-        .cmp_breadcrumbs a,
-        .cmp_breadcrumbs .current {
-          font-size: 11px; /* Further adjust font size for even smaller screens */
-        }
-      }
-      /* location css end */
+    .page-title .title {
+      font-size: 24px;
+      /* Set the initial font size */
+      margin: 0;
+      /* Remove default margin */
+      margin-left: 10px;
+    }
 
-      /* <!-- ----------------------------------------------------Page Title------------------------------------------------- --> */
-      .page-title {
-        text-align: left; /* Start the text from the left side */
-        margin-bottom: 20px; /* Add space below the title */
-      }
-
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 768px) {
       .page-title .title {
-        font-size: 24px; /* Set the initial font size */
-        margin: 0; /* Remove default margin */
-        margin-left: 10px;
+        font-size: 20px;
+        /* Decrease font size for smaller screens */
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .page-title .title {
+        font-size: 18px;
+        /* Further decrease font size for smaller screens */
+      }
+    }
+
+    /* <!-- ----------------------------------------------------Page Title--------------------------------------------------- --> */
+    /* <!-- ----------------------------------------------------ari-section css--------------------------------------------------- --> */
+    /* Base styles */
+    .article {
+      width: calc(100% - 20px);
+      /* Calculate width minus 20px for left and right margin */
+      max-width: auto;
+      /* Adjust max-width as needed */
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .art-sections {
+      margin-bottom: 20px;
+    }
+
+    .heads {
+      font-size: 24px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .lines,
+    .step {
+      font-size: 18px;
+      font-family: 'Anonymous Pro', monospace;
+    }
+
+    .steps {
+      font-size: 20px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      .article {
+        padding: 15px 10px;
+        /* Top/bottom 15px, left/right 10px */
       }
 
-      /* Media queries for responsiveness */
-      @media screen and (max-width: 768px) {
-        .page-title .title {
-          font-size: 20px; /* Decrease font size for smaller screens */
-        }
+      .heads {
+        font-size: 20px;
+        font-family: 'Orbitron', sans-serif;
       }
 
-      @media screen and (max-width: 576px) {
-        .page-title .title {
-          font-size: 18px; /* Further decrease font size for smaller screens */
-        }
+      .lines,
+      .step {
+        font-size: 16px;
+        font-family: 'Anonymous Pro', monospace;
       }
 
-      /* <!-- ----------------------------------------------------Page Title--------------------------------------------------- --> */
+      .steps {
+        font-size: 18px;
+      }
+    }
 
-      /* <!-- ----------------------------------------------------ari-section css--------------------------------------------------- --> */
-      /* Base styles */
-.article {
-  width: calc(100% - 20px); /* Calculate width minus 20px for left and right margin */
-  max-width: auto; /* Adjust max-width as needed */
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
-}
+    @media screen and (max-width: 576px) {
+      .article {
+        padding: 10px 5px;
+        /* Top/bottom 10px, left/right 5px */
+      }
 
-.art-sections {
-  margin-bottom: 20px;
-}
+      .heads {
+        font-size: 18px;
+        font-family: 'Orbitron', sans-serif;
+      }
 
-.heads {
-  font-size: 24px;
-  font-family: 'Orbitron', sans-serif;
-}
+      .lines,
+      .step {
+        font-size: 14px;
+        font-family: 'Anonymous Pro', monospace;
+      }
 
-.lines, .step {
-  font-size: 18px;
-  font-family: 'Anonymous Pro', monospace;
-}
+      .steps {
+        font-size: 16px;
+      }
+    }
 
-.steps {
-  font-size: 20px;
-}
+    @media screen and (max-width: 480px) {
+      .article {
+        padding: 5px 2px;
+        /* Top/bottom 5px, left/right 2px */
+      }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  .article {
-    padding: 15px 10px; /* Top/bottom 15px, left/right 10px */
-  }
-  
-  .heads {
-    font-size: 20px;
-    font-family: 'Orbitron', sans-serif;
-  }
-  
-  .lines, .step {
-    font-size: 16px;
-    font-family: 'Anonymous Pro', monospace;
-  }
-  
-  .steps {
-    font-size: 18px;
-  }
-}
+      .heads {
+        font-size: 16px;
+        font-family: 'Orbitron', sans-serif;
+      }
 
-@media screen and (max-width: 576px) {
-  .article {
-    padding: 10px 5px; /* Top/bottom 10px, left/right 5px */
-  }
-  
-  .heads {
-    font-size: 18px;
-    font-family: 'Orbitron', sans-serif;
-  }
-  
-  .lines, .step {
-    font-size: 14px;
-    font-family: 'Anonymous Pro', monospace;
-  }
-  
-  .steps {
-    font-size: 16px;
-  }
-}
+      .lines,
+      .step {
+        font-size: 12px;
+        font-family: 'Anonymous Pro', monospace;
+      }
 
-@media screen and (max-width: 480px) {
-  .article {
-    padding: 5px 2px; /* Top/bottom 5px, left/right 2px */
-  }
-  
-  .heads {
-    font-size: 16px;
-    font-family: 'Orbitron', sans-serif;
-  }
-  
-  .lines, .step {
-    font-size: 12px;
-    font-family: 'Anonymous Pro', monospace;
-    
-  }
-  
-  .steps {
-    font-size: 14px;
-  }
-}
+      .steps {
+        font-size: 14px;
+      }
+    }
 
-@media screen and (max-width: 320px) {
-  .article {
-    padding: 2px; /* Padding 2px for all sides */
-  }
-  
-  .heads {
-    font-size: 14px;
-    font-family: 'Orbitron', sans-serif;
-  }
-  
-  .lines, .step {
-    font-size: 10px;
-    font-family: 'Anonymous Pro', monospace;
-  }
-  
-  .steps {
-    font-size: 12px;
-  }
-}
-.art-img {
-  max-width: 50vw; /* 50% of the viewport width */
-  max-height: 50vh; /* 50% of the viewport height */
-  display: block;
-  margin: 20px auto; /* Center the image with 20px margin top and bottom */
-  background-color: red;
-}
+    @media screen and (max-width: 320px) {
+      .article {
+        padding: 2px;
+        /* Padding 2px for all sides */
+      }
 
-      /* <!-- ----------------------------------------------------article-section css--------------------------------------------------- --> */
-    
-      .installation-command {
-  background-color: #1E1E1E; /* Dark background color */
-  color: #00FF00; /* Green text color */
-  padding: 10px;
-  border-radius: 5px;
-  overflow-x: auto; /* Enable horizontal scroll if needed */
-}
+      .heads {
+        font-size: 14px;
+        font-family: 'Orbitron', sans-serif;
+      }
 
-    </style>
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65bb29ab4df8ae001978a126&product=inline-share-buttons&source=platform" async="async"></script>
-  </head>
-  <body>
-   
-    <section class="article">
-      <div class="art-sections">
-        <div>
+      .lines,
+      .step {
+        font-size: 10px;
+        font-family: 'Anonymous Pro', monospace;
+      }
 
-         <h1>Privacy Policy of thisizasif</h1>
+      .steps {
+        font-size: 12px;
+      }
+    }
 
-<p class="heads"></p>
-<ol>
-  <p class="step">thisizasif operates the thisizasif.github.io website, which provides the SERVICE.
+    .art-img {
+      max-width: 50vw;
+      /* 50% of the viewport width */
+      max-height: 50vh;
+      /* 50% of the viewport height */
+      display: block;
+      margin: 20px auto;
+      /* Center the image with 20px margin top and bottom */
+      background-color: red;
+    }
 
-This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the thisizasif website.
+    /* <!-- ----------------------------------------------------article-section css--------------------------------------------------- --> */
+    .installation-command {
+      background-color: #1E1E1E;
+      /* Dark background color */
+      color: #00FF00;
+      /* Green text color */
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+      /* Enable horizontal scroll if needed */
+    }
+  </style>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65bb29ab4df8ae001978a126&product=inline-share-buttons&source=platform" async="async"></script>
+</head>
 
-If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+<body>
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at thisizasif.github.io, unless otherwise defined in this Privacy Policy.</p>
-  
-</ol>
+  <section class="article">
+    <div class="art-sections">
+      <div>
 
+        <h1>Privacy Policy of thisizasif</h1>
 
+        <p class="heads"></p>
+        <ol>
 
-<p class="heads">Information Collection and Use</p>
-<ol>
-  <p class="step">For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to your name, phone number, and postal address. The information that we collect will be used to contact or identify you.</p>
-</ol>
+          <p class="step">thisizasif operates the thisizasif.github.io website, which provides the SERVICE.
 
+            This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the thisizasif website.
 
+            If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
 
+            The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at thisizasif.github.io, unless otherwise defined in this Privacy Policy.</p>
 
-<p class="heads">Log Data
+        </ol>
 
-</p>
-<ol>
-  <p class="step">We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.</p>
-</ol>
-
+        <p class="heads">Information Collection and Use</p>
+        <ol>
 
+          <p class="step">For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to your name, phone number, and postal address. The information that we collect will be used to contact or identify you.</p>
 
-<p class="heads">Cookies</p>
-<ol>
-  <p class="step">Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer's hard drive.
+        </ol>
 
-Our website uses these "cookies" to collection information and to improve our Service. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.</p>
-</ol>
+        <p class="heads">Log Data
 
+        </p>
+        <ol>
 
+          <p class="step">We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.</p>
 
+        </ol>
 
+        <p class="heads">Cookies</p>
+        <ol>
 
-<p class="heads">Service Providers</p>
-<ol>
-  <p class="step">We may employ third-party companies and individuals due to the following reasons:
+          <p class="step">Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer's hard drive.
 
-To facilitate our Service;
-To provide the Service on our behalf;
-To perform Service-related services; or
-To assist us in analyzing how our Service is used.
-We want to inform our Service users that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
-</ol>
+            Our website uses these "cookies" to collection information and to improve our Service. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.</p>
 
+        </ol>
 
+        <p class="heads">Service Providers</p>
+        <ol>
 
+          <p class="step">We may employ third-party companies and individuals due to the following reasons:
 
+            To facilitate our Service;
+            To provide the Service on our behalf;
+            To perform Service-related services; or
+            To assist us in analyzing how our Service is used.
+            We want to inform our Service users that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
 
-<p class="heads">Security</p>
-<ol>
-  <p class="step">We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security</p>
-</ol>
+        </ol>
 
+        <p class="heads">Security</p>
+        <ol>
 
+          <p class="step">We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security</p>
 
+        </ol>
 
+        <p class="heads">Children's Privacy</p>
+        <ol>
 
-<p class="heads">Children's Privacy</p>
-<ol>
-  <p class="step"></p>
-</ol>
-</div>
+          <p class="step"></p>
 
-
-<p class="heads"></p>
-<ol>
-  <p class="step">Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
-</ol>
-</div>
-
-
-
-<p class="heads">Changes to This Privacy Policy</p>
-<ol>
-  <p class="step">We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
-</ol>
-</div>
-
-
-
-
-<p class="heads">Contact Us</p>
-<ol>
-  <p class="step">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.<a href="mailto:thisizasif@gmail.com.com"> Email</a></p>
-</ol>
-</div>
-
+        </ol>
       </div>
-    </section>
-    <div class="sharethis-inline-share-buttons"></div>
-  </body>
+
+      <p class="heads"></p>
+      <ol>
+
+        <p class="step">Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
+
+      </ol>
+    </div>
+
+    <p class="heads">Changes to This Privacy Policy</p>
+    <ol>
+
+      <p class="step">We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
+
+    </ol>
+    </div>
+
+    <p class="heads">Contact Us</p>
+    <ol>
+
+      <p class="step">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.<a href="mailto:thisizasif@gmail.com.com"> Email</a></p>
+    </ol>
+    </div>
+
+    </div>
+  </section>
+  <div class="sharethis-inline-share-buttons"></div>
+</body>
+
 </html>
