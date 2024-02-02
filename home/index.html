@@ -3,268 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/home/header.css" />
-    <link rel="stylesheet" href="/home/footer.css" />
-    <link rel="stylesheet" href="/home/postcard.css" />
-    <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/66aa7c98b3.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Navigation Bar with Dropdown Menu and Text</title>
+    <style>
+      /* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Navigation bar styles */
+      .navbar {
+        overflow: hidden;
+        background-color: aqua;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 20px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: #555;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #555;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* Text in span */
+      .logo span {
+        color: white;
+        font-size: 20px;
+        padding: 14px 20px;
+        float: left;
+      }
+      /* Default styles */
+      .links {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Media query for small screens (mobile phones) */
+      @media only screen and (max-width: 600px) {
+        .links {
+          justify-content: flex-end;
+        }
+      }
+
+      /* Media query for medium screens (tablets) */
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        .links {
+          justify-content: flex-end;
+        }
+      }
+
+      /* Media query for large screens (laptops and desktops) */
+      @media only screen and (min-width: 1025px) {
+        .links {
+          justify-content: flex-end;
+        }
+      }
+    </style>
   </head>
   <body>
-    <section class="nav">
-      <nav>
-        <div class="navbar">
-          <i class="bx bx-menu"></i>
-          <div class="logo"><a href="#">thisizasif</a></div>
-          <div class="nav-links">
-            <div class="sidebar-logo">
-              <span class="logo-name">thisizasif</span>
-              <i class="bx bx-x"></i>
-            </div>
-            <ul class="links">
-              <li><a href="#">HOME</a></li>
-              <li>
-                <a href="#">HTML & CSS</a>
-                <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
-                <ul class="htmlCss-sub-menu sub-menu">
-                  <li><a href="#">Web Design</a></li>
-                  <li><a href="#">Login Forms</a></li>
-                  <li><a href="#">Card Design</a></li>
-                  <li class="more">
-                    <span
-                      ><a href="#">More</a>
-                      <i class="bx bxs-chevron-right arrow more-arrow"></i>
-                    </span>
-                    <ul class="more-sub-menu sub-menu">
-                      <li><a href="#">Neumorphism</a></li>
-                      <li><a href="#">Pre-loader</a></li>
-                      <li><a href="#">Glassmorphism</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">JAVASCRIPT</a>
-                <i class="bx bxs-chevron-down js-arrow arrow"></i>
-                <ul class="js-sub-menu sub-menu">
-                  <li><a href="#">Dynamic Clock</a></li>
-                  <li><a href="#">Form Validation</a></li>
-                  <li><a href="#">Card Slider</a></li>
-                  <li><a href="#">Complete Website</a></li>
-                </ul>
-              </li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">CONTACT US</a></li>
-            </ul>
-          </div>
-          <div class="search-box">
-            <i class="bx bx-search"></i>
-            <div class="input-box">
-              <input type="text" placeholder="Search..." />
-            </div>
-          </div>
-        </div>
-      </nav>
-    </section>
-    <!-- below nav -->
-    <section>
-      <div class="belownav">
-        <img src="/assets/mask.png" alt="Anonymous Mask" />
+    <div class="navbar">
+      <div class="logo">
+        <span>thisizasif</span>
       </div>
-    </section>
-    <!-- below nav end -->
-
-    <!-- post card start -->
-    <section>
-      <div class="container">
-        <!-- post                  1  -->
-        <div class="card">
-          <div class="card__header">
-            <img
-              src="https://th.bing.com/th?id=OIP.z6URRH3a2I_xDaBpiFzIWQHaE7&w=306&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2"
-              alt="card__image"
-              class="card__image"
-              width="600"
-            />
-          </div>
-          <a href="">
-            <div class="card__body">
-              <span class="tag tag-blue">Technology</span>
-              <h4>What's new in 2022 Tech</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                perferendis molestiae non nemo doloribus. Doloremque, nihil! At
-                ea atque quidem!
-              </p>
-            </div>
-            <div class="card__footer">
-              <div class="user">
-                <img
-                  src="https://i.pravatar.cc/40?img=1"
-                  alt="user__image"
-                  class="user__image"
-                />
-                <div class="user__info">
-                  <h5>Jane Doe</h5>
-                  <small>01-january-2024</small>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- next -->
-
-        <!-- post              2      -->
-        <div class="card">
-          <div class="card__header">
-            <img
-              src="https://th.bing.com/th?id=OIP.z6URRH3a2I_xDaBpiFzIWQHaE7&w=306&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2"
-              alt="card__image"
-              class="card__image"
-              width="600"
-            />
-          </div>
-          <a href="/siteposts/BlueBadge.html">
-            <div class="card__body">
-              <span class="tag tag-blue">BlueBadge</span>
-              <h4>BlueBadge</h4>
-              <p>
-                Brute-Force Tool for PDF and ZIP Files...
-                <br />
-                <br />
-                <br />
-                <br />
-              </p>
-            </div>
-            <div class="card__footer">
-              <div class="user">
-                <img
-                  src="https://th.bing.com/th/id/OIP.aHMfLwG-MfLM-FJzIaQOdgHaIW?w=144&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7"
-                  alt="user__image"
-                  class="user__image"
-                />
-                <div class="user__info">
-                  <h5>thisizasif</h5>
-                  <small>29-january-2024</small>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- next -->
-        <!-- post               3     -->
-        <div class="card">
-          <div class="card__header">
-            <img
-              src="https://th.bing.com/th?id=OIP.z6URRH3a2I_xDaBpiFzIWQHaE7&w=306&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2"
-              alt="card__image"
-              class="card__image"
-              width="600"
-            />
-          </div>
-          <a href="">
-            <div class="card__body">
-              <span class="tag tag-blue">Technology</span>
-              <h4>What's new in 2022 Tech</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                perferendis molestiae non nemo doloribus. Doloremque, nihil! At
-                ea atque quidem!
-              </p>
-            </div>
-            <div class="card__footer">
-              <div class="user">
-                <img
-                  src="https://i.pravatar.cc/40?img=1"
-                  alt="user__image"
-                  class="user__image"
-                />
-                <div class="user__info">
-                  <h5>Jane Doe</h5>
-                  <small>01-january-2024</small>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- next -->
-      </div>
-    </section>
-    <!-- post card end -->
-
-    <!-- footer -->
-    <div>
-      <div class="footer">
-        <div class="heading">
-          <h2>ABCDEF<sup>&trade;</sup></h2>
-        </div>
-        <div class="content">
-          <div class="services">
-            <h4>Services</h4>
-            <p><a href="#">App developmen</a></p>
-            <p><a href="#">Web development</a></p>
-            <p><a href="#">DevOps</a></p>
-            <p><a href="#">Web designing</a></p>
-          </div>
-          <div class="social-media">
-            <h4>Social</h4>
-            <p>
-              <a href="https://www.linkedin.com/in/sanket-bodke-995b5b205/"
-                ><i class="fab fa-linkedin"></i> Linkedin</a
-              >
-            </p>
-            <p>
-              <a href="https://twitter.com/Sanket46171296"
-                ><i class="fab fa-twitter"></i> Twitter</a
-              >
-            </p>
-            <p>
-              <a href="https://github.com/sanketbodke"
-                ><i class="fab fa-github"></i> Github</a
-              >
-            </p>
-            <p>
-              <a href="https://codepen.io/sanketbodke"
-                ><i class="fab fa-codepen"></i> Codepen</a
-              >
-            </p>
-            <p>
-              <a href="https://www.instagram.com/imsanketbodke/?hl=en"
-                ><i class="fab fa-instagram"></i> Instagram</a
-              >
-            </p>
-          </div>
-          <div class="links">
-            <h4>Quick links</h4>
-            <p><a href="#">Home</a></p>
-            <p><a href="/sitepages/about.html">About</a></p>
-            <p><a href="/sitepages/privacypolicy.html">Blogs</a></p>
-            <p><a href="/assets/termsofservices.html">Contact</a></p>
-          </div>
-          <div class="details">
-            <h4 class="address">Address</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur <br />
-              adipisicing elit. Cupiditate, qui!
-            </p>
-            <h4 class="mobile">Mobile</h4>
-            <p><a href="#">+918082042836</a></p>
-            <h4 class="mail">Email</h4>
-            <p><a href="#">thisizasif@gmail.com</a></p>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/sitepages/about.html">About</a>
+        <a href="/sitepages/privacypolicy.html">About</a>
+        <a href="/sitepages/termsofservices.html">About</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Dropdown
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/siteposts/BlueBadge.html">BlueBadge</a>
+            <a href="#link2">Link 2</a>
+            <a href="#link3">Link 3</a>
           </div>
         </div>
-        <footer>
-          <hr />
-          &copy; 2024 thisizasif Technologies Pvt. Ltd.
-        </footer>
       </div>
     </div>
-    <!-- footer -->
   </body>
 </html>
