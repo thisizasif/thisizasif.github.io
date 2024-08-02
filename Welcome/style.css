@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  background-color: rgb(195, 195, 195);
+  box-shadow: 3px 3px 5px rgba(36, 10, 10, 0.4);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15px;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover {
+  background-color: #f0f0f0;
+  border-radius: 30px;
+  height: 45px;
+}
+nav li:first-child {
+  margin-right: auto;
+  font-size: 12px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+#hom,
+#telegram,
+#telegramii {
+  margin: 0 12px 0 0;
+}
+.homeli a {
+  color: #04a7f2;
+}
+.sidebar a {
+  width: 100%;
+}
+.logo a {
+  /* color: red; */
+  font-weight: 600;
+  font-size: 15px;
+}
+.logo span {
+  color: #f64b54;
+}
+.logo strong {
+  color: #04a7f2;
+}
+
+@media (max-width: 800px) {
+  .hideonmobile {
+    display: none;
+  }
+  /* .menuicon{
+    display: none;
+  } */
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+  .menuicon {
+    margin-right: -40px;
+  }
+}
+@media (max-width: 640px) {
+  Button {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .menuicon {
+    display: none;
+  }
+}
+#telegram {
+  /* background-color: darkorchid; */
+  background-color: #04a7f2;
+  width: 100px;
+  height: 28px;
+  border-radius: 13px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+#telegramii {
+  /* background-color: darkblue; */
+  background-color: #f64b54;
+  width: 100px;
+  height: 28px;
+  border-radius: 13px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+#telegram a {
+  color: White;
+}
+#telegramii a {
+  color: White;
+}
+
+#telegramii a:hover {
+  background-color: green;
+  color: black;
+  width: 100px;
+  height: 28px;
+  border-radius: 13px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+#telegram a:hover {
+  background-color: yellow;
+  color: black;
+  width: 100px;
+  height: 28px;
+  border-radius: 13px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+.poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 10px; */
+  height: 350px;
+  background-color: yellow;
+  border-radius: 0 0 40px 40px;
+  /* margin: 50px 0 0 0; */
+}
+.poster .i {
+  margin: 132px 0 0 0;
+  color: red;
+  font-size: 11px;
+  margin-right: 90px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  word-spacing: 8px;
+  letter-spacing: 1px;
+}
+.poster .ii {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 45px;
+  word-spacing: 8px;
+  letter-spacing: 1px;
+}
+.poster .ii strong {
+  color: #04a7f2;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* post cards css end here */
+.post-wrapper {
+  /* background-color: yellow; */
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.card {
+  width: 300px;
+  border-style: solid;
+  /* background-color: white; */
+  height: 350px;
+  border-radius: 33px;
+}
+.thumbnail {
+  width: 100%;
+  border-radius: 33px;
+}
+.icon {
+  width: 45px;
+}
+.tags {
+  width: 30%;
+  margin-left: 5px;
+  font-size: 10px;
+  background-color: brown;
+  border-radius: 10px;
+  display: block;
+  color: white;
+}
+.title {
+  /* color: white; */
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.description {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.description a {
+  text-decoration: none;
+  color: black;
+}
+.icon {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+  /* display: block; */
+}
+.name {
+  margin-top: -35px;
+  margin-left: 50px;
+  height: 45px;
+  display: block;
+  font-size: 15px;
+  color: green;
+}
+.date {
+  margin-top: -24px;
+  margin-left: 50px;
+  height: 45px;
+  display: block;
+  font-size: 10px;
+  color: gray;
+}
+@media (max-width: 1200px) {
+  .post-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .post-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .post-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    /* display: flex;
+  justify-content: center; */
+  }
+  .card {
+    margin-left: 22%;
+  }
+}
+@media (max-width: 480px) {
+  .post-wrapper {
+    margin-left: -53px;
+  }
+}
+
+/* post cards css end here */

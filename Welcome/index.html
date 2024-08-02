@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/Welcome/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li class="closeicon" onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#000000"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              /></svg
+          ></a>
+        </li>
+        <li class="homeli"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blogg</a></li>
+      </ul>
+      <ul>
+        <li class="logo">
+          <a href="#"
+            ><span><strong>iServe</strong>Tools</span></a
+          >
+        </li>
+        <li id="hom" class="hideonmobile"><a href="#">Home</a></li>
+        <li id="hom" class="hideonmobile">
+          <a href="/test/test.html">Posts</a>
+        </li>
+        <li id="hom" class="hideonmobile"><a href="#">Services</a></li>
+        <li id="hom" class="hideonmobile"><a href="#">Contact</a></li>
+        <button class="hideonmobile" id="telegramii">
+          <a href="https://github.com/thisizasif">GitHub</a>
+        </button>
+        <button class="hideonmobile" id="telegram">
+          <a https="t.me/thisizasif">telegram</a>
+        </button>
+        <li class="menuicon" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26px"
+              viewBox="0 -960 960 960"
+              width="26px"
+              fill="#000000"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="poster">
+        <span class="i">Welcome to iServeTools</span>
+        <span class="ii"
+          >We Serve <br /><strong>Ethical Hacking</strong> Tools</span
+        >
+      </div>
+    </main>
+    <section>
+      <div class="post-wrapper">
+        <div class="card">
+          <img src="/assets/ASHU.PNG" alt="Ashu" class="thumbnail" />
+          <button class="tags">Blue-Badge</button>
+          <span class="title">Blue-Badge</span>
+          <span class="description"
+            >BlueBadge is a pdf password cracker developed by team
+            <a href="github.com/thisizasif/BlueBadge"
+              ><strong>thiszasif🧑‍💻</strong></a
+            ></span
+          >
+          <img src="/assets/ASHU.PNG" alt="icon" class="icon" />
+          <span class="name">thisizasif</span>
+          <span class="date">01-Aug-2024</span>
+        </div>
+        <div class="card">
+          <img src="/assets/ASHU.PNG" alt="Ashu" class="thumbnail" />
+          <button class="tags">Blue-Badge</button>
+          <span class="title">Blue-Badge</span>
+          <span class="description"
+            >BlueBadge is a pdf password cracker developed by team
+            <a href="github.com/thisizasif/BlueBadge"
+              ><strong>thiszasif🧑‍💻</strong></a
+            ></span
+          >
+          <img src="/assets/ASHU.PNG" alt="icon" class="icon" />
+          <span class="name">thisizasif</span>
+          <span class="date">01-Aug-2024</span>
+        </div>
+        <div class="card">
+          <img src="/assets/ASHU.PNG" alt="Ashu" class="thumbnail" />
+          <button class="tags">Blue-Badge</button>
+          <span class="title">Blue-Badge</span>
+          <span class="description"
+            >BlueBadge is a pdf password cracker developed by team
+            <a href="github.com/thisizasif/BlueBadge"
+              ><strong>thiszasif🧑‍💻</strong></a
+            ></span
+          >
+          <img src="/assets/ASHU.PNG" alt="icon" class="icon" />
+          <span class="name">thisizasif</span>
+          <span class="date">01-Aug-2024</span>
+        </div>
+        <div class="card">
+          <img src="/assets/ASHU.PNG" alt="Ashu" class="thumbnail" />
+          <button class="tags">Blue-Badge</button>
+          <span class="title">Blue-Badge</span>
+          <span class="description"
+            >BlueBadge is a pdf password cracker developed by team
+            <a href="github.com/thisizasif/BlueBadge"
+              ><strong>thiszasif🧑‍💻</strong></a
+            ></span
+          >
+          <img src="/assets/ASHU.PNG" alt="icon" class="icon" />
+          <span class="name">thisizasif</span>
+          <span class="date">01-Aug-2024</span>
+        </div>
+      </div>
+    </section>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
