@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thisizasif | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Blinking Stars Background -->
+    <div class="stars-container">
+        <div class="stars"></div>
+        <div class="stars"></div>
+        <div class="stars"></div>
+    </div>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#" class="logo-text">thisizasif<span class="purple-dot">.</span></a>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <i class="fas fa-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/projects/projects.html" class="nav-link">
+                            <i class="fas fa-folder"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">
+                            <i class="fas fa-file-text"></i>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blogs" class="nav-link">
+                            <i class="fas fa-blog"></i>
+                            <span>Blogs</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-cta">
+                <a href="https://t.me/thisizasif" class="cta-button">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Contact Me</span>
+                </a>
+            </div>
+
+
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-greeting">Hi There!</h1>
+                    <h2 class="hero-name">I'M <span class="purple-text">Asif Nazir</span></h2>
+                    <div class="hero-subtitle">
+                        <span>A Passionate</span>
+                        <div class="typewriter">
+                            <span class="type-text">Dream Developer</span>
+                            <span class="cursor">|</span>
+                        </div>
+                    </div>
+                    <p class="hero-description">
+                        I build exceptional digital experiences that are fast, accessible,
+                        visually appealing, and responsive. Let's build something amazing together.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="/projects/projects.html" class="btn-primary">
+                            <i class="fas fa-code"></i>
+                            <span>View Projects</span>
+                        </a>
+                        <a href="mailto:thisizasif@gmail.com" class="btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="illustration-container">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="window-title">terminal.js</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code class="javascript">const developer = {
+    name: "Asif Nazir",
+    role: "Dream Developer",
+    skills: ["JavaScript", "React", "Node.js"],
+    passion: "Building amazing web experiences"
+};
+
+console.log("Hello World!");</code></pre>
+                            </div>
+                        </div>
+                        <div class="developer-image">
+                            <!-- Illustration will be placed via CSS or image -->
+                            <div class="desk"></div>
+                            <div class="laptop"></div>
+                            <div class="developer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    LET ME <span class="purple-text">INTRODUCE</span> MYSELF
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I fell in love with programming and I have at least learnt something,
+                        I think… 🤷‍♂️
+                    </p>
+                    <p>
+                        I am fluent in classics like
+                        <span class="purple-text">JavaScript</span>,
+                        <span class="purple-text">Node.js</span>, and
+                        <span class="purple-text">React.js</span>.
+                    </p>
+                    <p>
+                        My field of Interest's are building new
+                        <span class="purple-text">Web Technologies and Products</span>
+                        and also in areas related to
+                        <span class="purple-text">Blockchain</span>.
+                    </p>
+                    <p>
+                        Whenever possible, I also apply my passion for developing products with
+                        <span class="purple-text">Next.js</span> and
+                        <span class="purple-text">Modern JavaScript Libraries</span>.
+                    </p>
+                </div>
+                <div class="about-avatar">
+                    <div class="avatar-container">
+                        <div class="avatar-image">
+                            <!-- Avatar placeholder -->
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                        <div class="avatar-decoration">
+                            <div class="orbit orbit-1"></div>
+                            <div class="orbit orbit-2"></div>
+                            <div class="orbit orbit-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">FIND ME ON</h2>
+                <p class="section-subtitle">Feel free to <span class="purple-text">connect</span> with me</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/thisizasif" class="social-icon" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/thisixasif" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/thisizasif" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://Instagram.com/thisizasif" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>Designed and Developed by <span class="purple-text">thisizasif</span></p>
+                    <p class="copyright">© 2026 All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/thisizasif" class="footer-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/thisixasif" class="footer-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/thisizasif" class="footer-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://Instagram.com/thisizasif" class="footer-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram -in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
